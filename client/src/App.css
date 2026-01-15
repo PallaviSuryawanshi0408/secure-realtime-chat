@@ -1,0 +1,171 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* LOGIN */
+
+.login{
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding:40px;
+  border-radius:15px;
+  text-align:center;
+  width:320px;
+  color:white;
+}
+
+.login h2{
+  color:#00ffcc;
+  margin-bottom:20px;
+}
+
+.login input{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.login button{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  background:#00ffcc;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* MAIN */
+
+.container{
+  width:900px;
+  height:550px;
+  display:flex;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 0 30px #00ffcc55;
+}
+
+/* USERS */
+
+.users{
+  width:25%;
+  background: rgba(0,0,0,0.5);
+  padding:20px;
+}
+
+.users h3{
+  color:#00ffcc;
+  margin-bottom:10px;
+}
+
+.users p{
+  color:white;
+  margin:8px 0;
+  padding:5px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.users p:hover{
+  background:#00ffcc22;
+}
+
+/* CHAT */
+
+.chat{
+  width:75%;
+  display:flex;
+  flex-direction:column;
+}
+
+.chat h3{
+  padding:15px;
+  background: rgba(0,0,0,0.6);
+  color:#00ffcc;
+  text-align:center;
+}
+
+/* MESSAGES */
+
+.messages{
+  flex:1;
+  padding:15px;
+  overflow-y:auto;
+}
+
+.my{
+  background:#00ffcc;
+  color:black;
+  padding:10px;
+  border-radius:15px 15px 0 15px;
+  margin:8px 0;
+  max-width:60%;
+  align-self:flex-end;
+}
+
+.other{
+  background:#222;
+  color:white;
+  padding:10px;
+  border-radius:15px 15px 15px 0;
+  margin:8px 0;
+  max-width:60%;
+}
+
+.my small,
+.other small{
+  display:block;
+  font-size:10px;
+  opacity:0.6;
+}
+
+/* INPUT */
+
+.input{
+  display:flex;
+  padding:10px;
+  background: rgba(0,0,0,0.6);
+}
+
+.input input{
+  flex:1;
+  padding:12px;
+  border:none;
+  border-radius:20px;
+  outline:none;
+}
+
+.input button{
+  margin-left:10px;
+  padding:12px 25px;
+  background:#00ffcc;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* TYPING */
+
+.typing{
+  padding-left:15px;
+  color:#00ffcc;
+  font-size:12px;
+}
